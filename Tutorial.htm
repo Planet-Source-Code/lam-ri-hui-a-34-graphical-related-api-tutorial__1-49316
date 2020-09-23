@@ -1,0 +1,1891 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Graphical API Tutorial</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ div.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+table.MsoTableGrid
+	{border:1.0pt solid windowtext;
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center" style="text-align: center">
+<font face="Comic Sans MS" size="6"><b><u>
+34 Graphical APIs Tutorial</u></b></font></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<b><font face="Comic Sans MS" size="4">What will you learn</font></b></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<font face="Comic Sans MS">&nbsp;&nbsp;&nbsp; - How to use all 34 API related 
+with graphic</font></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<b><font face="Comic Sans MS" size="4">Learning Method</font></b></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<font face="Comic Sans MS">&nbsp;&nbsp;&nbsp; -Brief description about the API</font></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<font face="Comic Sans MS">&nbsp;&nbsp;&nbsp; -Detailed information about the 
+API, such as declaration, parameter and return values</font></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<font face="Comic Sans MS">&nbsp;&nbsp;&nbsp; -Fully commented source code using the API</font></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<b><font face="Comic Sans MS" size="4">Brief Description of the 34 APIs</font></b></p>
+
+<p class="MsoNormal" align="center" style="text-align: left">
+<font face="Comic Sans MS">There are 34 graphical related API. Below is a brief description 
+about each API.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="1" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>CreatePen :</b> The CreatePen function creates a 
+  logical pen that has the specified style, width, and color. The pen can 
+  subsequently be selected into a device context and used to draw lines and 
+  curves.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="2" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>CreatePenIndirect :</b> The CreatePenIndirect function 
+  creates a logical cosmetic pen that has the style, width, and color specified 
+  in a structure.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="3" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>DrawAnimatedRects :</b> The DrawAnimatedRects function 
+  draws a wire-frame rectangle and animates it to indicate the opening of an 
+  icon or the minimizing or maximizing of a window.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="4" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>DrawCaption : </b>The DrawCaption function draws a 
+  window caption.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="5" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>DrawEdge :</b> The DrawEdge function draws one or more 
+  edges of rectangle.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="6" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>DrawFocusRect :</b> The DrawFocusRect function draws a 
+  rectangle in the style used to indicate that the rectangle has the focus.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="7" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>DrawFrameControl :</b> The DrawFrameControl function 
+  draws a frame control of the specified type and style.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="8" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>DrawState :</b> The DrawState function displays an 
+  image and applies a visual effect to indicate a state, such as a disabled or 
+  default state.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="9" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>ExtFloodFill :</b> The ExtFloodFill function fills an 
+  area of the display surface with the current brush.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="10" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>FillRect :</b> The FillRect function fills a rectangle 
+  by using the specified brush. This function includes the left and top borders, 
+  but excludes the right and bottom borders of the rectangle.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="11" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>FillRgn :</b> The FillRgn function fills a region by 
+  using the specified brush.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="12" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>FloodFill : </b>The FloodFill function fills an area 
+  of the display surface with the current brush. The area is assumed to be 
+  bounded as specified by the crFill parameter.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="13" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>FrameRect : </b>The FrameRect function draws a border 
+  around the specified rectangle by using the specified brush. The width and 
+  height of the border are always one logical unit.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="14" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>FrameRgn :</b> The FrameRgn function draws a border 
+  around the specified region by using the specified brush.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="15" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GdiGradientFillRect :</b> The GdiGradientFill 
+  function fills rectangle and triangle structures.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="16" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GetBkColor : </b>The GetBkColor function returns the 
+  current background color for the specified device context.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="17" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GetDeviceGammaRamp:</b> The GetDeviceGammaRamp 
+  function gets the gamma ramp on direct color display boards whose drivers 
+  support downloadable gamma ramps in hardware.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="18" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GetPixel : </b>The GetPixel function retrieves the 
+  red, green, blue (RGB) color value of the pixel at the specified coordinates.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="19" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GetROP2 :</b> The GetROP2 function retrieves the 
+  foreground mix mode of the specified device context. The mix mode specifies 
+  how the pen or interior color and the color already on the screen are combined 
+  to yield a new color.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="20" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GradientFillRect : </b>The GradientFill function 
+  fills rectangle and triangle structures.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="21" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>GradientFillTriangle :</b> The GradientFill function 
+  fills rectangle and triangle structures.</font></li>
+</ol>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="22" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>InvertRect :</b> The InvertRect function inverts a 
+  rectangle in a window by performing a logical NOT operation on the color 
+  values for each pixel in the rectangle’s interior.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="23" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>InvertRgn : </b>The InvertRgn function inverts the 
+  colors in the specified region.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="24" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>LoadImage :</b> The LoadImage function loads an icon, 
+  cursor, or bitmap.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="25" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>OleCreatePictureIndirect :</b> Creates a new picture 
+  object initialized according to a PICTDESC structure.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="26" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>OleLoadPicturePath :</b> Creates a new picture object 
+  and initializes it from the contents of a stream.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="27" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>OleTranslateColor : </b>Converts an OLE_COLOR type to 
+  a COLORREF.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="28" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>PaintDesktop :</b> The PaintDesktop function fills 
+  the clipping region in the specified device context with the desktop pattern 
+  or wallpaper. The function is provided primarily for shell desktops.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="29" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>PrintWindow :</b> The PrintWindow function copies a 
+  visual window into the specified device context (DC), typically a printer DC.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="30" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>SetBkMode :</b> The SetBkMode function sets the 
+  background mix mode of the specified device context. The background mix mode 
+  is used with text, hatched brushes, and pen styles that are not solid lines.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="31" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>SetDeviceGammaRamp :</b> The SetDeviceGammaRamp 
+  function sets the gamma ramp on direct color display boards having drivers 
+  that support downloadable gamma ramps in hardware.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="32" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>SetPixel :</b> The SetPixel function sets the pixel 
+  at the specified coordinates to the specified color.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="33" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>SetPixelV :</b> The SetPixelV function sets the pixel 
+  at the specified coordinates to the closest approximation of the specified 
+  color. The point must be in the clipping region and the visible part of the 
+  device surface.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="34" type="1">
+  <li class="MsoNormal"><font face="Comic Sans MS"><b>SetROP2 :</b> The SetROP2 function sets the current 
+  foreground mix mode. GDI uses the foreground mix mode to combine pens and 
+  interiors of filled objects with the colors already on the screen. The 
+  foreground mix mode defines how colors from the brush or pen and the colors in 
+  the existing image are to be combined.</font></li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<div class="MsoNormal" align="center" style="text-align: center; margin-left: .25in">
+  <hr size="2" width="100%" align="center">
+</div>
+<p class="MsoNormal" style="margin-left: .25in">
+<font face="Comic Sans MS" size="4"><b><u>CreatePen</u></b></font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>Declaration </b>
+</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Declare Function CreatePen Lib 
+&quot;gdi32&quot; Alias &quot;CreatePen&quot; (ByVal nPenStyle As Long, ByVal nWidth As Long, ByVal 
+crColor As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Parameters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· fnPenStyle</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Specifies the pen style. It can 
+be any one of the following values:</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_SOLID - Pen is solid.</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_DASH - Pen is dashed. This style is valid only when the pen 
+width is one or less in device units.</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_DOT - Pen is dotted. This style is valid only when the pen 
+width is one or less in device units.</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_DASHDOT - Pen has alternating dashes and dots. This style is 
+valid only when the pen width is one or less in device units.</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_DASHDOTDOT - Pen has alternating dashes and double dots. This 
+style is valid only when the pen width is one or less in device units.</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_NULL - Pen is invisible.</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .75in">
+<font face="Comic Sans MS">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Comic Sans MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><font face="Comic Sans MS">PS_INSIDEFRAME - Pen is solid. When this pen is used in any 
+graphics device interface (GDI) drawing function that takes a bounding 
+rectangle, the dimensions of the figure are shrunk so that it fits entirely in 
+the bounding rectangle, taking into account the width of the pen. This applies 
+only to geometric pens.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· nWidth</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Specifies the width of the pen, 
+in logical units. If nWidth is zero, the pen is a single pixel wide, regardless 
+of the current transformation.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· crColor</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Specifies a color reference for 
+the pen color.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If the function succeeds, the 
+return value is a handle that identifies a logical pen. </font> </p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If the function fails, the 
+return value is NULL.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+CreatePen\CreatePen.vbp</font></p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in">
+<font face="Comic Sans MS" size="4"><u>
+<b>CreatePenIndirect</b></u></font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function CreatePenIndirect Lib &quot;gdi32&quot; Alias &quot;CreatePenIndirect&quot; (lpLogPen 
+As LOGPEN) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+lplgpn<br>
+Points to the LOGPEN structure that specifies the pen’s style, width, and color.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is a handle that identifies a logical 
+cosmetic pen. <br>
+<br>
+If the function fails, the return value is NULL.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+CreatePen\CreatePen.vbp</font></p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in">
+<font face="Comic Sans MS" size="4"><u>
+<b>DrawAnimatedRects</b></u></font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function DrawAnimatedRects Lib &quot;user32&quot; Alias &quot;DrawAnimatedRects&quot; (ByVal 
+hwnd As Long, ByVal idAni As Long, lprcFrom As Rect, lprcTo As Rect) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+hwnd<br>
+[in] Handle to the window to which the rectangle is clipped. If this parameter 
+is NULL, the working area of the screen is used.<br>
+<br>
+· idAni<br>
+[in] Specifies the type of animation. If you specify IDANI_CAPTION, the window 
+caption will animate from the position specified by lprcFrom to the position 
+specified by lprcTo. The effect is similar to minimizing or maximizing a window.<br>
+<br>
+· lprcFrom<br>
+[in] Pointer to a RECT structure specifying the location and size of the icon or 
+minimized window. Coordinates are relative to the rectangle specified by the 
+lprcClip parameter.<br>
+<br>
+· lprcTo<br>
+[in] Pointer to a RECT structure specifying the location and size of the 
+restored window. Coordinates are relative to the rectangle specified by the 
+lprcClip parameter.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+DrawAnimatedRects\DrawAnimatedRects.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in">
+<font face="Comic Sans MS" size="4"><u>
+<b>DrawCaption</b></u></font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function DrawCaption Lib &quot;user32&quot; Alias &quot;DrawCaption&quot; (ByVal hWnd As 
+Long, ByVal hDC As Long, pcRect As Rect, ByVal un As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+hwnd<br>
+Handle to a window that supplies text and an icon for the window caption.<br>
+<br>
+· hdc<br>
+Handle to a device context. The function draws the window caption into this 
+device context.<br>
+<br>
+· lprc<br>
+Pointer to a RECT structure that specifies the bounding rectangle for the window 
+caption.<br>
+<br>
+· uFlags<br>
+A set of bit flags that specify drawing options. You can set zero or more of the 
+following flags:<br>
+DC_ACTIVE - The function uses the colors that denote an active caption.<br>
+DC_ICON - The function draws the icon when drawing the caption text.<br>
+DC_INBUTTON - The function draws the caption as a button.<br>
+DC_SMALLCAP - The function draws a small caption, using the current small 
+caption font.<br>
+DC_TEXT - The function draws the caption text when drawing the caption.<br>
+<br>
+If DC_SMALLCAP is specified, the function draws a normal window caption.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+DrawCaption\DrawCaption.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in">
+<font face="Comic Sans MS" size="4"><u>
+<b>DrawEdge</b></u></font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function DrawEdge Lib &quot;user32&quot; Alias &quot;DrawEdge&quot; (ByVal hdc As Long, qrc 
+As RECT, ByVal edge As Long, ByVal grfFlags As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· qrc<br>
+Points to a RECT structure that contains the logical coordinates of the 
+rectangle.<br>
+<br>
+· edge<br>
+Specifies the type of inner and outer edge to draw. This parameter must be a 
+combination of one inner-border flag and one outer-border flag. The inner-border 
+flags are as follows:<br>
+BDR_RAISEDINNER - Raised inner edge.<br>
+BDR_SUNKENINNER - Sunken inner edge.<br>
+<br>
+The outer-border flags are as follows:<br>
+BDR_RAISEDOUTER - Raised outer edge.<br>
+BDR_SUNKENOUTER - Sunken outer edge.<br>
+<br>
+Alternatively, the edge parameter can specify one of the following flags:<br>
+EDGE_BUMP - Combination of BDR_RAISEDOUTER and BDR_SUNKENINNER.<br>
+EDGE_ETCHED - Combination of BDR_SUNKENOUTER and BDR_RAISEDINNER.<br>
+EDGE_RAISED - Combination of BDR_RAISEDOUTER and BDR_RAISEDINNER.<br>
+EDGE_SUNKEN - Combination of BDR_SUNKENOUTER and BDR_SUNKENINNER.<br>
+<br>
+· grfFlags<br>
+Specifies the type of border. This parameter can be a combination of these 
+values:<br>
+BF_ADJUST - Rectangle to be adjusted to leave space for client area.<br>
+BF_BOTTOM - Bottom of border rectangle.<br>
+BF_BOTTOMLEFT - Bottom and left side of border rectangle.<br>
+BF_BOTTOMRIGHT - Bottom and right side of border rectangle.<br>
+BF_DIAGONAL - Diagonal border.<br>
+BF_DIAGONAL_ENDBOTTOMLEFT - Diagonal border. The end point is the bottom-left 
+corner of the rectangle; the origin is top-right corner.<br>
+BF_DIAGONAL_ENDBOTTOMRIGHT - Diagonal border. The end point is the bottom-right 
+corner of the rectangle; the origin is top-left corner.<br>
+BF_DIAGONAL_ENDTOPLEFT - Diagonal border. The end point is the top-left corner 
+of the rectangle; the origin is bottom-right corner.<br>
+BF_DIAGONAL_ENDTOPRIGHT - Diagonal border. The end point is the top-right corner 
+of the rectangle; the origin is bottom-left corner.<br>
+BF_FLAT - Flat border.<br>
+BF_LEFT - Left side of border rectangle.<br>
+BF_MIDDLE - Interior of rectangle to be filled.<br>
+BF_MONO - One-dimensional border.<br>
+BF_RECT - Entire border rectangle.<br>
+BF_RIGHT - Right side of border rectangle.<br>
+BF_SOFT - Soft buttons instead of tiles.<br>
+BF_TOP - Top of border rectangle.<br>
+BF_TOPLEFT - Top and left side of border rectangle.<br>
+BF_TOPRIGHT - Top and right side of border rectangle.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+DrawCaption\DrawCaption.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">
+DrawFocusRect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function DrawFocusRect Lib &quot;user32&quot; Alias &quot;DrawFocusRect&quot; (ByVal hdc As 
+Long, lpRect As RECT) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hDC<br>
+Identifies the device context.<br>
+<br>
+· lprc<br>
+Points to a RECT structure that specifies the logical coordinates of the 
+rectangle.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+DrawCaption\DrawCaption.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">
+DrawFrameControl</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function DrawFrameControl Lib &quot;user32&quot; Alias &quot;DrawFrameControl&quot; (ByVal 
+hDC As Long, lpRect As RECT, ByVal un1 As Long, ByVal un2 As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context of the window in which to draw the control.<br>
+<br>
+· lprc<br>
+Points to a RECT structure that contains the logical coordinates of the bounding 
+rectangle for frame control.<br>
+<br>
+· uType<br>
+Specifies the type of frame control to draw. This parameter can be one of the 
+following values:<br>
+DFC_BUTTON - Standard button<br>
+DFC_CAPTION - Title bar<br>
+DCF_MENU - Menu<br>
+DFC_SCROLL - Scroll bar<br>
+<br>
+· uState<br>
+Specifies the initial state of the frame control. If uType is DFC_BUTTON, uState 
+can be one of the following values:<br>
+DFCS_BUTTON3STATE - Three-state button<br>
+DFCS_BUTTONCHECK - Check box<br>
+DFCS_BUTTONPUSH - Push button<br>
+DFCS_BUTTONRADIO - Radio button<br>
+DFCS_BUTTONRADIOIMAGE - Image for radio button (nonsquare needs image)<br>
+DFCS_BUTTONRADIOMASK - Mask for radio button (nonsquare needs mask)<br>
+<br>
+If uType is DFC_CAPTION, uState can be one of the following values:<br>
+DFCS_CAPTIONCLOSE - Close button<br>
+DFCS_CAPTIONHELP - Windows 95 only: Help button<br>
+DFCS_CAPTIONMAX - Maximize button<br>
+DFCS_CAPTIONMIN - Minimize button<br>
+DFCS_CAPTIONRESTORE - Restore button<br>
+<br>
+If uType is DFC_MENU, uState can be one of the following values:<br>
+DFCS_MENUARROW - Submenu arrow<br>
+DFCS_MENUBULLET - Bullet<br>
+DFCS_MENUCHECK - Check mark<br>
+<br>
+If uType is DFC_SCROLL, uState can be one of the following values:<br>
+DFCS_SCROLLCOMBOBOX - Combo box scroll bar<br>
+DFCS_SCROLLDOWN - Down arrow of scroll bar<br>
+DFCS_SCROLLLEFT - Left arrow of scroll bar<br>
+DFCS_SCROLLRIGHT - Right arrow of scroll bar<br>
+DFCS_SCROLLSIZEGRIP - Size grip in bottom-right corner of window<br>
+DFCS_SCROLLUP - Up arrow of scroll bar<br>
+<br>
+The following style can be used to adjust the bounding rectangle of the push 
+button:<br>
+DFCS_ADJUSTRECT - Bounding rectangle is adjusted to exclude the surrounding edge 
+of the push button.<br>
+<br>
+One or more of the following values can be used to set the state of the control 
+to be drawn:<br>
+DFCS_CHECKED - Button is checked.<br>
+DFCS_FLAT - Button has a flat border.<br>
+DFCS_INACTIVE - Button is inactive (grayed).<br>
+DFCS_MONO - Button has a monochrome border.<br>
+DFCS_PUSHED - Button is pushed.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+DrawCaption\DrawCaption.vbp</font></p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">DrawState</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function DrawState Lib &quot;user32&quot; Alias &quot;DrawStateA&quot; (ByVal hDC As Long, 
+ByVal hBrush As Long, ByVal lpDrawStateProc As Long, ByVal lParam As Long, ByVal 
+wParam As Long, ByVal n1 As Long, ByVal n2 As Long, ByVal n3 As Long, ByVal n4 
+As Long, ByVal un As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context to draw in.<br>
+<br>
+· hbr<br>
+Identifies the brush used to draw the image, if the state specified by the 
+fuFlags parameter is DSS_MONO. This parameter is ignored for other states.<br>
+<br>
+· lpOutputFunc<br>
+Points to an application-defined callback function used to render the image. 
+This parameter is required if the image type in fuFlags is DST_COMPLEX. It is 
+optional and can be NULL if the image type is DST_TEXT. For all other image 
+types, this parameter is ignored. For more information about the callback 
+function, see the DrawStateProc function.<br>
+<br>
+· lData<br>
+Specifies information about the image. The meaning of this parameter depends on 
+the image type.<br>
+<br>
+· wData<br>
+Specifies information about the image. The meaning of this parameter depends on 
+the image type. It is, however, zero extended for use with the DrawStateProc 
+function.<br>
+<br>
+· x<br>
+Specifies the horizontal location at which to draw the image.<br>
+<br>
+· y<br>
+Specifies the vertical location at which to draw the image.<br>
+<br>
+· cx<br>
+Specifies the width of the image, in device units. This parameter is required if 
+the image type is DST_COMPLEX. Otherwise, it can be zero to calculate the width 
+of the image.<br>
+<br>
+· cy<br>
+Specifies the height of the image, in device units. This parameter is required 
+if the image type is DST_COMPLEX. Otherwise, it can be zero to calculate the 
+height of the image.<br>
+<br>
+· fuFlags<br>
+Specifies the image type and state. The type can be one of these values:<br>
+DST_BITMAP - The image is a bitmap. The low-order word of the lData parameter is 
+the bitmap handle.<br>
+DST_COMPLEX - The image is application defined. To render the image, DrawState 
+calls the callback function specified by the lpOutputFunc parameter.<br>
+DST_ICON - The image is an icon. The low-order word of lData is the icon handle.<br>
+DST_PREFIXTEXT - The image is text that may contain an accelerator mnemonic. 
+DrawState interprets the ampersand (&amp;) prefix character as a directive to 
+underscore the character that follows. The lData parameter specifies the address 
+of the string, and the wData parameter specifies the length. If wData is zero, 
+the string must be null-terminated.<br>
+DST_TEXT - The image is text. The lData parameter specifies the address of the 
+string, and the wData parameter specifies the length. If wData is zero, the 
+string must be null-terminated.<br>
+<br>
+The state can be one of these values:<br>
+DSS_NORMAL - Draws the image without any modification.<br>
+DSS_UNION - Dithers the image.<br>
+DSS_DISABLED - Embosses the image.<br>
+DSS_MONO - Draws the image using the brush specified by the hbr parameter.<br>
+<br>
+For all states except DSS_NORMAL, the image is converted to monochrome before 
+the visual effect is applied.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+DrawState\DrawState.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">ExtFloodFill</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function ExtFloodFill Lib &quot;gdi32&quot; Alias &quot;ExtFloodFill&quot; (ByVal hdc As 
+Long, ByVal x As Long, ByVal y As Long, ByVal crColor As Long, ByVal wFillType 
+As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies a device context.<br>
+<br>
+· nXStart<br>
+Specifies the logical x-coordinate of the point where filling is to begin.<br>
+<br>
+· nYStart<br>
+Specifies the logical y-coordinate of the point where filling is to begin.<br>
+<br>
+· crColor<br>
+Specifies the color of the boundary or of the area to be filled. The 
+interpretation of crColor depends on the value of the fuFillType parameter.<br>
+<br>
+· fuFillType<br>
+Specifies the type of fill operation to be performed. It must be one of the 
+following values:<br>
+FLOODFILLBORDER - The fill area is bounded by the color specified by the crColor 
+parameter. This style is identical to the filling performed by the FloodFill 
+function.<br>
+FLOODFILLSURFACE - The fill area is defined by the color that is specified by 
+crColor. Filling continues outward in all directions as long as the color is 
+encountered. This style is useful for filling areas with multicolored 
+boundaries.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+ExtFloodFill\ExtFloodFill.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">FillRect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function FillRect Lib &quot;user32&quot; Alias &quot;FillRect&quot; (ByVal hdc As Long, 
+lpRect As RECT, ByVal hBrush As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hDC<br>
+Identifies the device context.<br>
+<br>
+· lprc<br>
+Points to a RECT structure that contains the logical coordinates of the 
+rectangle to be filled.<br>
+<br>
+· hbr<br>
+Identifies the brush used to fill the rectangle.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is TRUE. <br>
+<br>
+If the function fails, the return value is FALSE. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+FillRect\FillRect.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">
+FillRgn</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function FillRgn Lib &quot;gdi32&quot; Alias &quot;FillRgn&quot; (ByVal hdc As Long, ByVal 
+hRgn As Long, ByVal hBrush As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· hrgn<br>
+Identifies the region to be filled. The region’s coordinates are presumed to be 
+in logical units.<br>
+<br>
+· hbr<br>
+Identifies the brush to be used to fill the region.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+FillRgn\FillRegion.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><b><u>
+<font face="Comic Sans MS" size="4">FloodFill</font></u></b></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function FloodFill Lib &quot;gdi32&quot; Alias &quot;FloodFill&quot; (ByVal hdc As Long, 
+ByVal x As Long, ByVal y As Long, ByVal crColor As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies a device context.<br>
+<br>
+· nXStart<br>
+Specifies the logical x-coordinate of the point where filling is to begin.<br>
+<br>
+· nYStart<br>
+Specifies the logical y-coordinate of the point where filling is to begin.<br>
+<br>
+· crFill<br>
+Specifies the color of the boundary or of the area to be filled.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+CreatePen\CreatePen.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">FrameRect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function FrameRect Lib &quot;user32&quot; Alias &quot;FrameRect&quot; (ByVal hdc As Long, 
+lpRect As RECT, ByVal hBrush As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hDC<br>
+Identifies the device context in which the border is drawn.<br>
+<br>
+· lprc<br>
+Points to a RECT structure that contains the logical coordinates of the 
+upper-left and lower-right corners of the rectangle.<br>
+<br>
+· hbr<br>
+Identifies the brush used to draw the border.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is TRUE. <br>
+<br>
+If the function fails, the return value is FALSE. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+CreatePen\CreatePen.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">FrameRgn</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function FrameRgn Lib &quot;gdi32&quot; Alias &quot;FrameRgn&quot; (ByVal hdc As Long, ByVal 
+hRgn As Long, ByVal hBrush As Long, ByVal nWidth As Long, ByVal nHeight As Long) 
+As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· hrgn<br>
+Identifies the region to be enclosed in a border. The region’s coordinates are 
+presumed to be in logical units.<br>
+<br>
+· hbr<br>
+Identifies the brush to be used to draw the border.<br>
+<br>
+· nWidth<br>
+Specifies the width, in logical units, of vertical brush strokes.<br>
+<br>
+· nHeight<br>
+Specifies the height, in logical units, of horizontal brush strokes.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+CreatePen\CreatePen.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GdiGradientFillRect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GdiGradientFillRect Lib &quot;gdi32&quot; Alias &quot;GdiGradientFill&quot; (ByVal 
+hdc As Long, pVertex As TRIVERTEX, ByVal dwNumVertex As Long, pMesh As 
+GRADIENT_RECT, ByVal dwNumMesh As Long, ByVal dwMode As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+[in] Handle to the destination device context.<br>
+<br>
+· pVertex<br>
+[in] Pointer to an array of TRIVERTEX structures that each define a triangle 
+vertex.<br>
+<br>
+· dwNumVertex<br>
+[in] The number of vertices in pVertex.<br>
+<br>
+· pMesh<br>
+[in] Array of GRADIENT_TRIANGLE structures in triangle mode, or an array of 
+GRADIENT_RECT structures in rectangle mode.<br>
+<br>
+· dwNumMesh<br>
+[in] The number of elements (triangles or rectangles) in pMesh.<br>
+<br>
+· dwMode<br>
+[in] Specifies gradient fill mode. This parameter can be one of the following 
+values.<br>
+GRADIENT_FILL_RECT_H - In this mode, two endpoints describe a rectangle. The 
+rectangle is defined to have a constant color (specified by the TRIVERTEX 
+structure) for the left and right edges. GDI interpolates the color from the top 
+to bottom edge and fills the interior.<br>
+GRADIENT_FILL_RECT_V - In this mode, two endpoints describe a rectangle. The 
+rectangle is defined to have a constant color (specified by the TRIVERTEX 
+structure) for the top and bottom edges. GDI interpolates the color from the top 
+to bottom edge and fills the interior.<br>
+GRADIENT_FILL_TRIANGLE - In this mode, an array of TRIVERTEX structures is 
+passed to GDI along with a list of array indexes that describe separate 
+triangles. GDI performs linear interpolation between triangle vertices and fills 
+the interior. Drawing is done directly in 24- and 32-bpp modes. Dithering is 
+performed in 16-, 8-, 4-, and 1-bpp mode.<br>
+&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is TRUE.<br>
+<br>
+If the function fails, the return value is FALSE.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GdiGradientFill\GdiGradient.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GetBkColor</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GetBkColor Lib &quot;gdi32&quot; Alias &quot;GetBkColor&quot; (ByVal hdc As Long) 
+As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context whose background color is to be returned.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is a COLORREF value for the current 
+background color. <br>
+<br>
+If the function fails, the return value is CLR_INVALID. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetBkColor\GetCkColor.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GetDeviceGammaRamp</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GetDeviceGammaRamp Lib &quot;gdi32&quot; (ByVal hdc As Long, lpv As Any) 
+As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hDC
+<br>
+Specifies the device context of the direct color display board in question. <br>
+<br>
+· lpRamp <br>
+Points to a buffer where the function can place the current gamma ramp of the 
+color display board. The gamma ramp is specified in three arrays of 256 WORD 
+elements each, which contain the mapping between RGB values in the frame buffer 
+and digital-analog-converter (DAC) values. The sequence of the arrays is red, 
+green, blue. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetDeviceGammaRamp returns TRUE if it succeeds, and FALSE otherwise.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetDeviceGammaRamp\GetDevice.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GetPixel</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GetPixel Lib &quot;gdi32&quot; Alias &quot;GetPixel&quot; (ByVal hdc As Long, ByVal 
+x As Long, ByVal y As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· nXPos<br>
+Specifies the logical x-coordinate of the pixel to be examined.<br>
+<br>
+· nYPos<br>
+Specifies the logical y-coordinate of the pixel to be examined.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is an RGB value. If the pixel is outside 
+of the current clipping region, the return value is CLR_INVALID. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetPixel\GetPixel.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GetROP2</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GetROP2 Lib &quot;gdi32&quot; (ByVal hdc As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Handle to the device context.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value specifies the foreground mix mode. <br>
+<br>
+If the function fails, the return value is zero. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetROP2\GetROP2.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GradientFillRect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GradientFillRect Lib &quot;msimg32&quot; Alias &quot;GradientFill&quot; (ByVal hdc 
+As Long, pVertex As TRIVERTEX, ByVal dwNumVertex As Long, pMesh As GRADIENT_RECT, 
+ByVal dwNumMesh As Long, ByVal dwMode As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+[in] Handle to the destination device context.<br>
+<br>
+· pVertex<br>
+[in] Pointer to an array of TRIVERTEX structures that each define a triangle 
+vertex.<br>
+<br>
+· dwNumVertex<br>
+[in] The number of vertices in pVertex.<br>
+<br>
+· pMesh<br>
+[in] Array of GRADIENT_TRIANGLE structures in triangle mode, or an array of 
+GRADIENT_RECT structures in rectangle mode.<br>
+<br>
+· dwNumMesh<br>
+[in] The number of elements (triangles or rectangles) in pMesh.<br>
+<br>
+· dwMode<br>
+[in] Specifies gradient fill mode. This parameter can be one of the following 
+values.<br>
+GRADIENT_FILL_RECT_H - In this mode, two endpoints describe a rectangle. The 
+rectangle is defined to have a constant color (specified by the TRIVERTEX 
+structure) for the left and right edges. GDI interpolates the color from the top 
+to bottom edge and fills the interior.<br>
+GRADIENT_FILL_RECT_V - In this mode, two endpoints describe a rectangle. The 
+rectangle is defined to have a constant color (specified by the TRIVERTEX 
+structure) for the top and bottom edges. GDI interpolates the color from the top 
+to bottom edge and fills the interior.<br>
+GRADIENT_FILL_TRIANGLE - In this mode, an array of TRIVERTEX structures is 
+passed to GDI along with a list of array indexes that describe separate 
+triangles. GDI performs linear interpolation between triangle vertices and fills 
+the interior. Drawing is done directly in 24- and 32-bpp modes. Dithering is 
+performed in 16-, 8-, 4-, and 1-bpp mode.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is TRUE.<br>
+<br>
+If the function fails, the return value is FALSE.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GradientFill\GradientFillRect.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">GradientFillTriangle</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function GradientFillTriangle Lib &quot;msimg32&quot; Alias &quot;GradientFill&quot; (ByVal 
+hDC As Long, pVertex As TRIVERTEX, ByVal dwNumVertex As Long, pMesh As 
+GRADIENT_TRIANGLE, ByVal dwNumMesh As Long, ByVal dwMode As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+[in] Handle to the destination device context.<br>
+<br>
+· pVertex<br>
+[in] Pointer to an array of TRIVERTEX structures that each define a triangle 
+vertex.<br>
+<br>
+· dwNumVertex<br>
+[in] The number of vertices in pVertex.<br>
+<br>
+· pMesh<br>
+[in] Array of GRADIENT_TRIANGLE structures in triangle mode, or an array of 
+GRADIENT_RECT structures in rectangle mode.<br>
+<br>
+· dwNumMesh<br>
+[in] The number of elements (triangles or rectangles) in pMesh.<br>
+<br>
+· dwMode<br>
+[in] Specifies gradient fill mode. This parameter can be one of the following 
+values.<br>
+GRADIENT_FILL_RECT_H - In this mode, two endpoints describe a rectangle. The 
+rectangle is defined to have a constant color (specified by the TRIVERTEX 
+structure) for the left and right edges. GDI interpolates the color from the top 
+to bottom edge and fills the interior.<br>
+GRADIENT_FILL_RECT_V - In this mode, two endpoints describe a rectangle. The 
+rectangle is defined to have a constant color (specified by the TRIVERTEX 
+structure) for the top and bottom edges. GDI interpolates the color from the top 
+to bottom edge and fills the interior.<br>
+GRADIENT_FILL_TRIANGLE - In this mode, an array of TRIVERTEX structures is 
+passed to GDI along with a list of array indexes that describe separate 
+triangles. GDI performs linear interpolation between triangle vertices and fills 
+the interior. Drawing is done directly in 24- and 32-bpp modes. Dithering is 
+performed in 16-, 8-, 4-, and 1-bpp mode.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is TRUE.<br>
+<br>
+If the function fails, the return value is FALSE.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GradientFill\GradientFillTriangle.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">InvertRect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function InvertRect Lib &quot;user32&quot; Alias &quot;InvertRect&quot; (ByVal hdc As Long, 
+lpRect As RECT) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hDC<br>
+Identifies the device context.<br>
+<br>
+· lprc<br>
+Points to a RECT structure that contains the logical coordinates of the 
+rectangle to be inverted.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Invert\Rectangle.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">InvertRgn</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function InvertRgn Lib &quot;gdi32&quot; Alias &quot;InvertRgn&quot; (ByVal hdc As Long, 
+ByVal hRgn As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· hrgn<br>
+Identifies the region for which colors are inverted. The region’s coordinates 
+are presumed to be logical coordinates.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+CreatePen\CreatePen.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">LoadImage</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function LoadImage Lib &quot;user32&quot; Alias &quot;LoadImageA&quot; (ByVal hInst As Long, 
+ByVal lpsz As String, ByVal un1 As Long, ByVal n1 As Long, ByVal n2 As Long, 
+ByVal un2 As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+hinst<br>
+Identifies an instance of the module that contains the image to be loaded. To 
+load an OEM image, set this parameter to zero.<br>
+<br>
+· lpszName<br>
+Identifies the image to load.<br>
+If the hinst parameter is non-NULL and the fuLoad parameter does not include 
+LR_LOADFROMFILE, lpszName is a pointer to a null-terminated string that contains 
+the name of the image resource in the hinst module.<br>
+If hinst is NULL and LR_LOADFROMFILE is not specified, the low-order word of 
+this parameter must be the identifier of the OEM image to load. The OEM image 
+identifiers are defined in WINUSER.H and have the following prefixes:<br>
+OBM_<br>
+OEM bitmaps<br>
+OIC_<br>
+OEM icons<br>
+OCR_<br>
+OEM cursors<br>
+<br>
+If the fuLoad parameter includes the LR_LOADFROMFILE value, lpszName is the name 
+of the file that contains the image.<br>
+<br>
+· uType<br>
+Specifies the type of image to be loaded. This parameter can be one of the 
+following values:<br>
+IMAGE_BITMAP - Loads a bitmap.<br>
+IMAGE_CURSOR - Loads a cursor.<br>
+IMAGE_ICON - Loads an icon.<br>
+<br>
+· cxDesired<br>
+Specifies the width, in pixels, of the icon or cursor. If this parameter is zero 
+and the fuLoad parameter is LR_DEFAULTSIZE, the function uses the SM_CXICON or 
+SM_CXCURSOR system metric value to set the width. If this parameter is zero and 
+LR_DEFAULTSIZE is not used, the function uses the actual resource width.<br>
+<br>
+· cyDesired<br>
+Specifies the height, in pixels, of the icon or cursor. If this parameter is 
+zero and the fuLoad parameter is LR_DEFAULTSIZE, the function uses the SM_CYICON 
+or SM_CYCURSOR system metric value to set the height. If this parameter is zero 
+and LR_DEFAULTSIZE is not used, the function uses the actual resource height.<br>
+<br>
+· fuLoad<br>
+Specifies a combination of the following values:<br>
+LR_DEFAULTCOLOR - The default flag; it does nothing. All it means is &quot;not 
+LR_MONOCHROME&quot;.<br>
+LR_CREATEDIBSECTION - When the uType parameter specifies IMAGE_BITMAP, causes 
+the function to return a DIB section bitmap rather than a compatible bitmap. 
+This flag is useful for loading a bitmap without mapping it to the colors of the 
+display device.<br>
+LR_DEFAULTSIZE - Uses the width or height specified by the system metric values 
+for cursors or icons, if the cxDesired or cyDesired values are set to zero. If 
+this flag is not specified and cxDesired and cyDesired are set to zero, the 
+function uses the actual resource size. If the resource contains multiple 
+images, the function uses the size of the first image.<br>
+LR_LOADFROMFILE - Loads the image from the file specified by the lpszName 
+parameter. If this flag is not specified, lpszName is the name of the resource.<br>
+LR_LOADMAP3DCOLORS - Searches the color table for the image and replaces the 
+following shades of gray with the corresponding 3D color:</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Dk 
+Gray, RGB(128,128,128) - COLOR_3DSHADOW </font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Gray, 
+RGB(192,192,192) - COLOR_3DFACE</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">Lt 
+Gray, RGB(223,223,223) - COLOR_3DLIGHT </font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+LR_LOADTRANSPARENT - Retrieves the color value of the first pixel in the image 
+and replaces the corresponding entry in the color table with the default window 
+color (COLOR_WINDOW). All pixels in the image that use that entry become the 
+default window color. This value applies only to images that have corresponding 
+color tables.<br>
+If fuLoad includes both the LR_LOADTRANSPARENT and LR_LOADMAP3DCOLORS values, 
+LRLOADTRANSPARENT takes precedence. However, the color table entry is replaced 
+with COLOR_3DFACE rather than COLOR_WINDOW.<br>
+LR_MONOCHROME - Loads the image in black and white.<br>
+LR_SHARED - Shares the image handle if the image is loaded multiple times. If 
+LR_SHARED is not set, a second call to LoadImage for the same resource will load 
+the image again and return a different handle.<br>
+Do not use LR_SHARED for images that have non-standard sizes, that may change 
+after loading, or that are loaded from a file.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is the handle of the newly loaded image.
+<br>
+<br>
+If the function fails, the return value is NULL.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+LoadImage\LoadImage.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">OleCreatePictureIndirect</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function OleCreatePictureIndirect Lib &quot;olepro32.dll&quot; (PicDesc As PicBmp, 
+RefIID As GUID, ByVal fPictureOwnsHandle As Long, IPic As IPicture) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+pPictDesc<br>
+[in] Pointer to a caller-allocated structure containing the initial state of the 
+picture.<br>
+<br>
+· riid<br>
+[in] Reference to the identifier of the interface describing the type of 
+interface pointer to return in ppvObj.<br>
+<br>
+· fOwn<br>
+[in] If TRUE, the picture object is to destroy its picture when the object is 
+destroyed. If FALSE, the caller is responsible for destroying the picture.<br>
+<br>
+· ppvObj<br>
+[out] Indirect pointer to the initial interface pointer on the new object. If 
+the call is successful, the caller is responsible for calling Release through 
+this interface pointer when the new object is no longer needed. If the call 
+fails, the value of ppvObj is set to NULL.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">This 
+function supports the standard return values E_INVALIDARG, E_OUTOFMEMORY, and 
+E_UNEXPECTED, as well as the following: <br>
+<br>
+S_OK - The new picture object was created successfully. <br>
+<br>
+E_NOINTERFACE - The object does not support the interface specified in riid. <br>
+<br>
+E_POINTER - The address in pPictDesc or ppvObj is not valid. For example, it may 
+be NULL. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+OleCreatePicIndirect\CreatePicIndirect.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">OleLoadPicturePath</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function OleLoadPicturePath Lib &quot;oleaut32.dll&quot; (ByVal szURLorPath As 
+Long, ByVal punkCaller As Long, ByVal dwReserved As Long, ByVal clrReserved As 
+OLE_COLOR, ByRef riid As TGUID, ByRef ppvRet As IPicture) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+szURLorPath <br>
+[in] The path or url to the file you want to open. <br>
+<br>
+· punkCaller <br>
+[in] Points to IUnknown for COM aggregation. <br>
+<br>
+· dwReserved <br>
+[in] Reserved. <br>
+<br>
+· clrReserved <br>
+[in] The color you want to reserve to be transparent. <br>
+<br>
+· riid <br>
+[in] Reference to the identifier of the interface describing the type of 
+interface pointer to return in ppvRet. <br>
+<br>
+· ppvRet <br>
+[out] Address of pointer variable that receives the interface pointer requested 
+in riid. Upon successful return, *ppvRet contains the requested interface 
+pointer on the storage of the object identified by the moniker. If *ppvRet is 
+non-NULL, this function calls IUnknown::AddRef on the interface; it is the 
+caller's responsibility to call IUnknown::Release. If an error occurs, *ppvRet 
+is set to NULL. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">This 
+function supports the standard return values E_OUTOFMEMORY and E_UNEXPECTED, as 
+well as the following:<br>
+S_OK - The picture was created successfully. <br>
+E_POINTER - The address in ppvRet is NULL. <br>
+E_NOINTERFACE - The object does not support the interface specified in riid.
+</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+OleLoadPic\OleLoadPic.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">OleTranslateColor</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Private Declare Function OleTranslateColor Lib &quot;olepro32.dll&quot; (ByVal OLE_COLOR 
+As Long, ByVal hPalette As Long, pccolorref As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· clr
+<br>
+[in] The OLE color to be converted into a COLORREF. <br>
+<br>
+· hpal <br>
+[in] Palette used as a basis for the conversion. <br>
+<br>
+· pcolorref <br>
+[out] Pointer to the caller's variable that receives the converted COLORREF 
+result. This can be NULL, indicating that the caller wants only to verify that a 
+converted color exists. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">This 
+function supports the standard return values E_INVALIDARG and E_UNEXPECTED, as 
+well as the following: </font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">S_OK 
+- The color was translated successfully. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+OleTranslateColor\OleTransColor.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">PaintDesktop</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function PaintDesktop Lib &quot;user32&quot; Alias &quot;PaintDesktop&quot; (ByVal hdc As 
+Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetPixel\GetPixel.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">PrintWindow</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function PrintWindow Lib &quot;user32&quot; (ByVal hWnd As Long, ByVal hdcBlt As 
+Long, ByVal nFlags As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· 
+hwnd<br>
+Handle to the window that will be copied.<br>
+<br>
+· hdcBlt<br>
+Handle to the device context.<br>
+<br>
+· nFlags<br>
+Specifies the drawing options. It can be one of the following values.<br>
+<br>
+PW_CLIENTONLY<br>
+Only the client area of the window is copied to hdcBlt. By default, the entire 
+window is copied.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+PrintWindow\PrintWindow.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">SetBkMode</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function SetBkMode Lib &quot;gdi32&quot; Alias &quot;SetBkMode&quot; (ByVal hdc As Long, 
+ByVal nBkMode As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· iBkMode<br>
+Specifies the background mode. This parameter can be either of the following 
+values:<br>
+OPAQUE - Background is filled with the current background color before the text, 
+hatched brush, or pen is drawn.<br>
+TRANSPARENT - Background remains untouched.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value specifies the previous background mode.
+<br>
+<br>
+If the function fails, the return value is zero. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+FillRect\FillRect.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">SetDeviceGammaRamp</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function SetDeviceGammaRamp Lib &quot;gdi32&quot; (ByVal hdc As Long, lpv As Any) 
+As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hDC
+<br>
+Specifies the device context of the direct color display board in question. <br>
+<br>
+· lpRamp <br>
+Pointer to a buffer containing the gamma ramp to be set. The gamma ramp is 
+specified in three arrays of 256 WORD elements each, which contain the mapping 
+between RGB values in the frame buffer and digital-analog-converter (DAC) 
+values. The sequence of the arrays is red, green, blue. The RGB values must be 
+stored in the most significant bits of each WORD to increase DAC independence.
+</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+this function succeeds, the return value is TRUE. <br>
+<br>
+If this function fails, the return value is FALSE. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetDeviceGammaRamp\GetDevice.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">SetPixel</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function SetPixel Lib &quot;gdi32&quot; Alias &quot;SetPixel&quot; (ByVal hdc As Long, ByVal 
+x As Long, ByVal y As Long, ByVal crColor As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· X<br>
+Specifies the x-coordinate, in logical units, of the point to be set.<br>
+<br>
+· Y<br>
+Specifies the y-coordinate, in logical units, of the point to be set.<br>
+<br>
+· crColor<br>
+Specifies the color to be used to paint the point.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is the RGB value that the function sets 
+the pixel to. This value may differ from the color specified by crColor; that 
+happens when an exact match for the specified color cannot be found. <br>
+<br>
+If the function fails, the return value is -1. To get extended error 
+information, call GetLastError. </font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetPixel\GetPixel.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">SetPixelV</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function SetPixelV Lib &quot;gdi32&quot; Alias &quot;SetPixelV&quot; (ByVal hdc As Long, 
+ByVal x As Long, ByVal y As Long, ByVal crColor As Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Identifies the device context.<br>
+<br>
+· X<br>
+Specifies the x-coordinate, in logical units, of the point to be set.<br>
+<br>
+· Y<br>
+Specifies the y-coordinate, in logical units, of the point to be set.<br>
+<br>
+· crColor<br>
+Specifies the color to be used to paint the point.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+SetPixelV\Set.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+<p class="MsoNormal" style="margin-left: .25in"><u><b>
+<font face="Comic Sans MS" size="4">SetROP2</font></b></u></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Declaration</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+Declare Function SetROP2 Lib &quot;gdi32&quot; (ByVal hdc As Long, ByVal nDrawMode As 
+Long) As Long</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Paramenters</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">· hdc<br>
+Handle to the device context.<br>
+<br>
+· fnDrawMode<br>
+Specifies the new mix mode. This parameter can be any one of the following 
+values:<br>
+R2_BLACK - Pixel is always 0.<br>
+R2_COPYPEN - Pixel is the pen color.<br>
+R2_MASKNOTPEN - Pixel is a combination of the colors common to both the screen 
+and the inverse of the pen.<br>
+R2_MASKPEN - Pixel is a combination of the colors common to both the pen and the 
+screen.<br>
+R2_MASKPENNOT - Pixel is a combination of the colors common to both the pen and 
+the inverse of the screen.<br>
+R2_MERGENOTPEN - Pixel is a combination of the screen color and the inverse of 
+the pen color.<br>
+R2_MERGEPEN - Pixel is a combination of the pen color and the screen color.<br>
+R2_MERGEPENNOT - Pixel is a combination of the pen color and the inverse of the 
+screen color.<br>
+R2_NOP - Pixel remains unchanged.<br>
+R2_NOT - Pixel is the inverse of the screen color.<br>
+R2_NOTCOPYPEN - Pixel is the inverse of the pen color.<br>
+R2_NOTMASKPEN - Pixel is the inverse of the R2_MASKPEN color.<br>
+R2_NOTMERGEPEN - Pixel is the inverse of the R2_MERGEPEN color.<br>
+R2_NOTXORPEN - Pixel is the inverse of the R2_XORPEN color.<br>
+R2_WHITE - Pixel is always 1.<br>
+R2_XORPEN - Pixel is a combination of the colors in the pen and in the screen, 
+but not in both.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Return Values</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">If 
+the function succeeds, the return value is nonzero.<br>
+<br>
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS"><b>
+Example</b></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+GetROP2\GetROP2.vbp</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<hr>
+
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><b>
+<font face="Comic Sans MS" size="4">Learning Outcome</font></b></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">-How 
+to use all 34 API related with graphic</font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">-A 
+lot of Keywords</font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><b>
+<font face="Comic Sans MS" size="4">What I'd Like You To Do</font></b></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">-Vote 
+for this tutorial on <a href="http://www.planetsourcecode.com/vb/">
+http://www.planetsourcecode.com/vb/</a></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">-Give 
+me some feedback on <a href="http://www.planetsourcecode.com/vb/">
+http://www.planetsourcecode.com/vb/</a></font></p>
+<p class="MsoNormal" style="margin-left: .25in"><font face="Comic Sans MS">
+-Visit my website <a href="http://www.geocities.com/lamrihui/">
+http://www.geocities.com/lamrihui/</a></font></p>
+<p class="MsoNormal" style="margin-left: .25in">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: .25in"><b>
+<font face="Comic Sans MS" size="4">Lastly, thank you for reading this tutorial.</font></b></p>
+<p class="MsoNormal" style="margin-left: .25in" align="center">
+<font face="Comic Sans MS">
+--------------------------------------------------------------------</font></p>
+<p class="MsoNormal" style="margin-left: .25in" align="center"><b>
+<font face="Comic Sans MS" size="6">34 Graphical APIs Tutorial Ends Here</font></b></p>
+<p class="MsoNormal" style="margin-left: .25in" align="center">
+<font face="Comic Sans MS">
+--------------------------------------------------------------------</font></p>
+
+</body>
+
+</html>
